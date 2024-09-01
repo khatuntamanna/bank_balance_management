@@ -15,6 +15,15 @@
     background-color: blueviolet;
 }
 
+.tittle{
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
+    background-color: chocolate;
+}
+
 .deposite-balance,.withdraw-balance,.total-balance,.deposite-amount,.withdraw-amount{
     width: 400px;
     height: 200px;
@@ -82,12 +91,7 @@ p{
     margin-top: -20px;
 }
 
-/* .dolar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap
-} */
+
 
 .withdraw-balance{
     background-color: rgb(180, 19, 19);
@@ -98,3 +102,56 @@ p{
     background-color: rgb(8, 8, 138);
 }
 
+/* responsive style started here */
+
+@media screen and (max-width: 576px) {
+    .amount-container, .balance-container{
+        flex-direction: column;
+        gap: 10px;
+       height: auto;
+       padding: 20px 0;
+
+
+    }
+
+    .amount-container{
+        margin-top: 10px;
+    }
+    .tittle{
+        font-size: 30px;
+    }
+
+    .deposite-balance,.withdraw-balance,.total-balance,.deposite-amount,.withdraw-amount{
+        width: 300px;
+        font-size: 15px;
+        /* align-items: center; */
+    }
+
+    input{
+       
+        font-size: 12px;
+    }
+
+    button{
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (min-width:576) and (max-width: 762px) {
+    .amount-container, .balance-container{
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 20px 0;
+    }
+@media screen and (min-width:762) and (max-width: 1080px) {
+    .amount-container, .balance-container{
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 20px 0;
+    }
+    
+}
+
+}

@@ -19,7 +19,7 @@ document.getElementById('deposite_button').addEventListener('click', function ()
     if(isNaN(depositeTotalNumber)){
       return 0 ;
     }
-        depositeTotal.innerHTML = totalDepositeBalance
+        depositeTotal.innerHTML = depositeTotalNumber + depositeAmount;
 
     depositeFiled.value = '';
            
@@ -49,8 +49,8 @@ document.getElementById('withdraw_button').addEventListener('click', function ()
 
       var depositeTotal = document.getElementById('deposite_total');
       var depositeTotalNumber = parseFloat(depositeTotal.innerText);
-      if(depositeTotalNumber == 0){
-        return alert("you don't have enough balance to withdraw")
+      if(depositeTotalNumber == 0 ){
+        return  alert("you don't have enough balance to withdraw")
       }
 
 
